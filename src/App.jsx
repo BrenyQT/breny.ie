@@ -6,7 +6,7 @@ export default function App() {
             id="about"
             className="min-h-screen flex flex-col items-center pt-16 px-4 select-none"
             style={{
-                backgroundColor: '#0078D7', // Windows XP blue sky fallback
+                backgroundColor: '#0078D7',
                 backgroundImage: `url(${process.env.PUBLIC_URL}/xp.jpeg)`,
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
