@@ -7,13 +7,7 @@ export default function Window({ title, children, id }) {
             {/* Title Bar */}
             <div className="bg-[#0A64A0] text-white px-5 py-2 flex justify-between items-center select-none">
                 <span className="font-bold text-base">{title}</span>
-                <button
-                    aria-label="Close window"
-                    className="bg-[#C83A3A] border-2 border-[#6B8FCE] w-8 h-8 flex items-center justify-center hover:bg-[#7B2020]"
-                    onClick={() => alert('Close button clicked!')}
-                >
-                    <span className="text-sm leading-none">X</span>
-                </button>
+
             </div>
             {/* Window content */}
             <div className="p-6 bg-white min-h-[200px] text-sm">

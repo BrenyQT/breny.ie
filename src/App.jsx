@@ -56,37 +56,85 @@ export default function App() {
                         width={100}
                         height={100}
                     />
+                </div >
+                <div id="experience"></div>
+            < /Window >
+
+
+
+
+            <Window title="Experience">
+                <div className="flex items-start justify-between gap-4">
+                    <div className="text-gray-900 text-xs leading-relaxed space-y-4 max-w-[70%]">
+                        <div>
+                            <h3 className="font-bold text-sm">Software Engineering Intern</h3>
+                            <p className="italic">WP Engine, Limerick — June 2023 to January 2024</p><br/>
+                            <ul className="list-disc list-inside mt-1 space-y-1">
+                                <li>Shipped production-grade features for e-commerce payment systems using React, TypeScript, and Golang.</li> <br/>
+                                <li>Shipped production-grade features for e-commerce payment systems using React, TypeScript, and Golang.</li><br/>
+                                <li>Worked in a 6-person Agile team, contributing to GitHub PRs and attending daily stand-ups.</li><br/>
+                                <li>Wrote clean, maintainable logic and unit tests; debugged across services.</li><br/>
+                                <li>Used Google Cloud Platform, CI/CD pipelines, and automated deployment tools.</li><br/>
+                                <li>Gained experience in code reviews, technical documentation, and handling customer-facing systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img
+                        src={`${process.env.PUBLIC_URL}/wp engine.jpg`}
+                        alt="WP Engine"
+                        className="mt-32 border-2 border-gray-500"
+                        width={100}
+                        height={100}
+                    />
                 </div>
             </Window>
 
 
 
+            <Window id="projects" title="Projects">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {/* Pub Club */}
+                    <div className="flex flex-col items-center bg-white p-2 border border-gray-300 shadow-sm">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/pub club.png`}
+                            alt="Pub Club Project"
+                            className="w-full h-[200px] object-cover border border-gray-400"
+                        />
+                        <p className="mt-2 text-center text-xs font-semibold text-gray-700">Pub Club</p>
+                        <a
+                            href="https://github.com/BrenyQT/Dating-Site-PubClub-CS4116"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-1 text-blue-600 text-xs underline hover:text-blue-800"
+                        >
+                            View on GitHub
+                        </a>
+                    </div>
 
-            <Window id="experience" title="Experience">
-                <div className="text-gray-900 text-xs leading-relaxed space-y-4">
-                    <div>
-                        <h3 className="font-bold text-sm">Software Engineering Intern</h3>
-                        <p className="italic">WP Engine, Limerick — June 2023 to January 2024</p>
-                        <ul className="list-disc list-inside mt-1 space-y-1">
-                            <li>Shipped production-grade features for e-commerce payment systems using React, TypeScript, and Golang.</li>
-                            <li>Worked in a 6-person Agile team, contributing to GitHub PRs and attending daily stand-ups.</li>
-                            <li>Wrote clean, maintainable logic and unit tests; debugged across services.</li>
-                            <li>Used Google Cloud Platform, CI/CD pipelines, and automated deployment tools.</li>
-                            <li>Gained experience in code reviews, technical documentation, and handling customer-facing systems.</li>
-                        </ul>
+                    {/* Bubble */}
+                    <div className="flex flex-col items-center bg-white p-2 border border-gray-300 shadow-sm">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/bubble.png`}
+                            alt="Bubble Project"
+                            className="w-full h-[200px] object-cover border border-gray-400"
+                        />
+                        <p className="mt-2 text-center text-xs font-semibold text-gray-700">Bubble</p>
+                        <a
+                            href="https://github.com/BrenyQT/bubble-fyp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-1 text-blue-600 text-xs underline hover:text-blue-800"
+                        >
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </Window>
 
 
-            <Window id="projects" title="Projects">
-                <div className="grid grid-cols-2 gap-3">
-
-                </div>
-            </Window>
 
             <Window id="contact" title="Contact">
-                <div className="text-gray-900 text-xs space-y-2">
+                <div className="text-gray-900 text-xs space-y-2 min-h-[200px] flex flex-col justify-center">
                     <p>
                         <strong>Phone:</strong>{' '}
                         <a href="tel:0871020054" className="underline hover:text-blue-600">
@@ -134,6 +182,7 @@ export default function App() {
                     </p>
                 </div>
             </Window>
+
 
 
             {/* Footer */}
