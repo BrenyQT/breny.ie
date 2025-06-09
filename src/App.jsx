@@ -14,7 +14,7 @@ export default function App() {
                 backgroundAttachment: 'fixed',
             }}
         >
-            {/* Fixed Header */}
+           
             <header  className="fixed top-0 left-0 w-full bg-[#0A64A0] shadow-md z-50 ">
                 <nav className="container mx-auto flex justify-center space-x-10 py-3 text-white text-xs font-bold tracking-widest select-none">
                     <a href="#about" className="hover:text-yellow-300 transition">
@@ -93,6 +93,7 @@ export default function App() {
 
             <Window id="projects" title="Projects">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    
                     {/* Pub Club */}
                     <div className="flex flex-col items-center bg-white p-2 border border-gray-300 shadow-sm">
                         <img
