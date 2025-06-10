@@ -4,7 +4,7 @@ export default function App() {
     return (
         <div
             id="about"
-            className="min-h-screen flex flex-col items-center pt-16 px-4 select-none"
+            className="min-h-screen flex flex-col items-center pt-16 px-4 select-none font-sans"
             style={{
                 backgroundColor: '#0078D7',
                 backgroundImage: `url(${process.env.PUBLIC_URL}/xp.jpeg)`,
