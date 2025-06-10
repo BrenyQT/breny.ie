@@ -4,7 +4,7 @@ export default function App() {
     return (
         <div
             id="about"
-            className="min-h-screen flex flex-col items-center pt-16 px-4 select-none font-sans"
+            className="min-h-screen flex flex-col items-center pt-16 px-4 select-none font-comic"
             style={{
                 backgroundColor: '#0078D7',
                 backgroundImage: `url(${process.env.PUBLIC_URL}/xp.jpeg)`,
@@ -16,27 +16,15 @@ export default function App() {
         >
             <header className="fixed top-0 left-0 w-full bg-[#0A64A0] shadow-md z-50">
                 <nav className="container mx-auto flex flex-wrap justify-center gap-6 py-3 text-white text-xs font-bold tracking-widest select-none">
-                    <a href="#about" className="hover:text-yellow-300 transition">
-                        ABOUT
-                    </a>
-                    <a href="#experience" className="hover:text-yellow-300 transition">
-                        EXPERIENCE
-                    </a>
-                    <a href="#projects" className="hover:text-yellow-300 transition">
-                        PROJECTS
-                    </a>
-                    <a href="#contact" className="hover:text-yellow-300 transition">
-                        CONTACT
-                    </a>
+                    <a href="#about" className="hover:text-yellow-300 transition">ABOUT</a>
+                    <a href="#experience" className="hover:text-yellow-300 transition">EXPERIENCE</a>
+                    <a href="#projects" className="hover:text-yellow-300 transition">PROJECTS</a>
+                    <a href="#contact" className="hover:text-yellow-300 transition">CONTACT</a>
                 </nav>
             </header>
 
-
-
-
             <Window title="About Me">
                 <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
-                    {/* mAK THIS MOBILE FRIENDLY IT KEPT STACKING  */}
                     <div className="text-gray-900 text-xs leading-tight max-w-full sm:max-w-[70%] space-y-2">
                         <p>
                             I'm <strong>Brendan Quinn</strong>, a soon-to-be graduate in Computer Systems from the University of Limerick
@@ -178,7 +166,6 @@ export default function App() {
                 </div>
             </Window>
 
-            {/* Footer */}
             <footer className="text-white text-xs mt-8 select-none mb-6 text-center">
                 © 2025 Brendan Quinn — Inspired by Windows XP.
             </footer>
