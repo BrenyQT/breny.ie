@@ -14,9 +14,8 @@ export default function App() {
                 backgroundAttachment: 'fixed',
             }}
         >
-           
-            <header  className="fixed top-0 left-0 w-full bg-[#0A64A0] shadow-md z-50 ">
-                <nav className="container mx-auto flex justify-center space-x-10 py-3 text-white text-xs font-bold tracking-widest select-none">
+            <header className="fixed top-0 left-0 w-full bg-[#0A64A0] shadow-md z-50">
+                <nav className="container mx-auto flex flex-wrap justify-center gap-6 py-3 text-white text-xs font-bold tracking-widest select-none">
                     <a href="#about" className="hover:text-yellow-300 transition">
                         ABOUT
                     </a>
@@ -32,9 +31,13 @@ export default function App() {
                 </nav>
             </header>
 
+
+
+
             <Window title="About Me">
-                <div className="flex items-start justify-between gap-4">
-                    <div className="text-gray-900 text-xs leading-tight max-w-[70%] space-y-2">
+                <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
+                    {/* mAK THIS MOBILE FRIENDLY IT KEPT STACKING  */}
+                    <div className="text-gray-900 text-xs leading-tight max-w-full sm:max-w-[70%] space-y-2">
                         <p>
                             I'm <strong>Brendan Quinn</strong>, a soon-to-be graduate in Computer Systems from the University of Limerick
                             (August 2025). I bring <strong>7 months of real-world experience</strong> as a Software Engineering Intern at WP Engine,
@@ -52,29 +55,25 @@ export default function App() {
                     <img
                         src={`${process.env.PUBLIC_URL}/breny.jpg`}
                         alt="Brendan Quinn"
-                        className="mt-8 border-2 border-gray-500"
+                        className="mt-4 sm:mt-8 border-2 border-gray-500 rounded"
                         width={100}
                         height={100}
                     />
-                </div >
+                </div>
                 <div id="experience"></div>
-            < /Window >
-
-
-
+            </Window>
 
             <Window title="Experience">
-                <div className="flex items-start justify-between gap-4">
-                    <div className="text-gray-900 text-xs leading-relaxed space-y-4 max-w-[70%]">
+                <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
+                    <div className="text-gray-900 text-xs leading-relaxed space-y-4 max-w-full sm:max-w-[70%]">
                         <div>
                             <h3 className="font-bold text-sm">Software Engineering Intern</h3>
-                            <p className="italic">WP Engine, Limerick — June 2023 to January 2024</p><br/>
+                            <p className="italic">WP Engine, Limerick — June 2023 to January 2024</p>
                             <ul className="list-disc list-inside mt-1 space-y-1">
-                                <li>Shipped production-grade features for e-commerce payment systems using React, TypeScript, and Golang.</li> <br/>
-                                <li>Shipped production-grade features for e-commerce payment systems using React, TypeScript, and Golang.</li><br/>
-                                <li>Worked in a 6-person Agile team, contributing to GitHub PRs and attending daily stand-ups.</li><br/>
-                                <li>Wrote clean, maintainable logic and unit tests; debugged across services.</li><br/>
-                                <li>Used Google Cloud Platform, CI/CD pipelines, and automated deployment tools.</li><br/>
+                                <li>Shipped production-grade features for e-commerce payment systems using React, TypeScript, and Golang.</li>
+                                <li>Worked in a 6-person Agile team, contributing to GitHub PRs and attending daily stand-ups.</li>
+                                <li>Wrote clean, maintainable logic and unit tests; debugged across services.</li>
+                                <li>Used Google Cloud Platform, CI/CD pipelines, and automated deployment tools.</li>
                                 <li>Gained experience in code reviews, technical documentation, and handling customer-facing systems.</li>
                             </ul>
                         </div>
@@ -82,24 +81,21 @@ export default function App() {
                     <img
                         src={`${process.env.PUBLIC_URL}/wp engine.jpg`}
                         alt="WP Engine"
-                        className="mt-32 border-2 border-gray-500"
+                        className="mt-4 sm:mt-32 border-2 border-gray-500 rounded"
                         width={100}
                         height={100}
                     />
                 </div>
             </Window>
 
-
-
             <Window id="projects" title="Projects">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    
                     {/* Pub Club */}
-                    <div className="flex flex-col items-center bg-white p-2 border border-gray-300 shadow-sm">
+                    <div className="flex flex-col items-center bg-white p-2 border border-gray-300 shadow-sm rounded">
                         <img
                             src={`${process.env.PUBLIC_URL}/pub club.png`}
                             alt="Pub Club Project"
-                            className="w-full h-[200px] object-cover border border-gray-400"
+                            className="w-full h-[200px] object-cover border border-gray-400 rounded"
                         />
                         <p className="mt-2 text-center text-xs font-semibold text-gray-700">Pub Club</p>
                         <a
@@ -113,11 +109,11 @@ export default function App() {
                     </div>
 
                     {/* Bubble */}
-                    <div className="flex flex-col items-center bg-white p-2 border border-gray-300 shadow-sm">
+                    <div className="flex flex-col items-center bg-white p-2 border border-gray-300 shadow-sm rounded">
                         <img
                             src={`${process.env.PUBLIC_URL}/bubble.png`}
                             alt="Bubble Project"
-                            className="w-full h-[200px] object-cover border border-gray-400"
+                            className="w-full h-[200px] object-cover border border-gray-400 rounded"
                         />
                         <p className="mt-2 text-center text-xs font-semibold text-gray-700">Bubble</p>
                         <a
@@ -131,8 +127,6 @@ export default function App() {
                     </div>
                 </div>
             </Window>
-
-
 
             <Window id="contact" title="Contact">
                 <div className="text-gray-900 text-xs space-y-2 min-h-[200px] flex flex-col justify-center">
@@ -184,10 +178,8 @@ export default function App() {
                 </div>
             </Window>
 
-
-
             {/* Footer */}
-            <footer className="text-white text-xs mt-8 select-none mb-6">
+            <footer className="text-white text-xs mt-8 select-none mb-6 text-center">
                 © 2025 Brendan Quinn — Inspired by Windows XP.
             </footer>
         </div>
