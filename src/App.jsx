@@ -27,23 +27,27 @@ export default function App() {
                 <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
                     <div className="text-gray-900 text-xs leading-tight max-w-full sm:max-w-[70%] space-y-2">
                         <p>
-                            I'm <strong>Brendan Quinn</strong> , a soon-to-be graduate in Computer Systems from the University of Limerick
-                            (August 2025). I bring <strong>7 months of real-world experience</strong> as a Software Engineering Intern at WP Engine,
-                            where I contributed to production-grade systems with modern technologies like React, TypeScript, and Golang.
+                            I'm <strong>Brendan Quinn</strong><br/>
+
                         </p>
                         <p>
-                            I'm passionate about building impactful, clean, and scalable software. I'm comfortable in Agile teams,
-                            collaborating cross-functionally, and working across the stack—from front-end interfaces to cloud infrastructure.
+                            I am a fresh <strong>First Class Honours (1:1)</strong> graduate from Computer Systems at the University of Limerick, with internship experience. I would describe myself as a determined, motivated and hardworking individual. A team player who can work independently when necessary.
                         </p>
                         <p>
-                            In my personal life I enjoy coaching with Special Olympics, running, swimming, music production/mixing and growing small business ventures.
+                            I am currently seeking a software engineering role where I can continue to grow my skills, contribute to industry level projects and collaborate with experienced teams.
+                        </p>
+                        <p>
+                            In my personal life I enjoy coaching with Special Olympics, running, swimming and music production/mixing.
+                        </p>
+                        <p>
                             I'm eager to bring my curiosity, energy, and drive to a full-time software engineering role.
+
                         </p>
                     </div>
                     <img
-                        src={`${process.env.PUBLIC_URL}/breny.jpg`}
+                        src={`${process.env.PUBLIC_URL}/breny.png`}
                         alt="Brendan Quinn"
-                        className="mt-4 sm:mt-8 border-2 border-gray-500 rounded"
+                        className="mt-4 sm:mt-12 border-2 border-gray-500 rounded"
                         width={100}
                         height={100}
                     />
@@ -69,7 +73,7 @@ export default function App() {
                     <img
                         src={`${process.env.PUBLIC_URL}/wp engine.jpg`}
                         alt="WP Engine"
-                        className="mt-4 sm:mt-32 border-2 border-gray-500 rounded"
+                        className=" sm:mt-12 border-2 border-gray-500 rounded"
                         width={100}
                         height={100}
                     />
