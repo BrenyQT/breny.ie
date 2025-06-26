@@ -27,7 +27,7 @@ export default function App() {
                 <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
                     <div className="text-gray-900 text-xs leading-tight max-w-full sm:max-w-[70%] space-y-2">
                         <p>
-                            I'm <strong>Brendan Quinn</strong>, a soon-to-be graduate in Computer Systems from the University of Limerick
+                            I'm <strong>Brendan Quinn</strong> , a soon-to-be graduate in Computer Systems from the University of Limerick
                             (August 2025). I bring <strong>7 months of real-world experience</strong> as a Software Engineering Intern at WP Engine,
                             where I contributed to production-grade systems with modern technologies like React, TypeScript, and Golang.
                         </p>
@@ -36,7 +36,7 @@ export default function App() {
                             collaborating cross-functionally, and working across the stack—from front-end interfaces to cloud infrastructure.
                         </p>
                         <p>
-                            Outside of code, I enjoy coaching with Special Olympics, running, swimming, and growing small business ventures.
+                            In my personal life I enjoy coaching with Special Olympics, running, swimming, music production/mixing and growing small business ventures.
                             I'm eager to bring my curiosity, energy, and drive to a full-time software engineering role.
                         </p>
                     </div>
